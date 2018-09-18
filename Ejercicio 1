@@ -11,7 +11,7 @@ int main()
         if (d%a==0)
         {
             x+=d;
-            cout<<x<<"\n";
+            cout<<x<<endl;
         }
         if (d%b==0)
         {
