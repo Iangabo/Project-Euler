@@ -5,19 +5,21 @@ using namespace std;
 
 int fib(int a, int b, int c, int d)
 {
-    cout<<d<<":  "<<b<<endl;
+    int long long cont=0;
+    int long long cont1=0;
     d++;
     while(d<a)
     {
         b=c+b;
         if (b%2==0)
-            cout<<d<<":  "<<b<<endl;
+           cont=cont+b;
         d++;
         c=c+b;
         if (c%2==0)
-            cout<<d<<":  "<<c<<endl;
+            cont1=cont1+c;
         d++;
     }
+    cout<<cont+cont1;
 }
 int main()
 {
@@ -29,3 +31,4 @@ int main()
     fib(a,b,c,d);
 
 }
+
